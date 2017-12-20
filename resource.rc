@@ -1,0 +1,114 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 310, 185
+STYLE DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "文件上传和下载"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "服务器的IP：",IDC_STATIC,14,8,51,16,SS_CENTERIMAGE
+    EDITTEXT        IDT_IP,76,8,214,16,ES_AUTOHSCROLL
+    LTEXT           "上传到服务器的目录：",IDC_STATIC,15,78,98,14,
+                    SS_CENTERIMAGE
+    LTEXT           "要下载文件的URL：",IDC_STATIC,15,131,98,14,
+                    SS_CENTERIMAGE
+    GROUPBOX        "文件上传",IDC_STATIC,7,30,296,76,BS_CENTER
+    LTEXT           "选择要上传的本地文件：",IDC_STATIC,15,52,98,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDT_UPLOAD_LOCAL_FILE,105,52,148,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "......",IDB_UPLOAD_SEL_FILE,262,52,34,14
+    EDITTEXT        IDT_UPLOAD_REMOTE_DIR,105,78,148,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始上传",IDB_UPLOAD_START,262,78,34,14
+    CONTROL         "",IDP_TRANSFER_RATE,"msctls_progress32",NOT WS_VISIBLE | 
+                    WS_BORDER,32,164,244,13
+    GROUPBOX        "文件下载",IDC_STATIC,7,114,296,47,BS_CENTER
+    EDITTEXT        IDT_DOWNLOAD_REMOTE_FILE,105,131,148,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始下载",IDB_DOWNLOAD_START,262,131,34,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
